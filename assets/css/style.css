@@ -1,0 +1,318 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.clear {
+  clear: both;
+}
+
+#main {}
+
+/* header */
+#header {
+  background-color: #cd1818;
+  height: 56px;
+  margin: auto;
+}
+
+#header .wrap {
+  display: flex;
+  width: 1220px;
+  padding: 0;
+}
+
+#header .container .logo {
+  width: 155px;
+  height: 56px;
+  margin-right: 55px;
+  overflow: hidden;
+}
+
+#header .wrap .length {
+  height: 38px;
+  width: 496px;
+  margin-top: 10px;
+}
+
+#header .wrap .length .form-radius {
+  border-radius: 3px 0 0 3px;
+}
+
+#header .wrap .length .btn-color {
+  background-color: #333;
+  width: 58px;
+  border-radius: 0 3px 3px 0;
+}
+
+#header .wrap .length .btn-color .ti-search {
+  color: #fff;
+}
+
+#header .wrap .service {
+  display: flex;
+  height: 56px;
+  text-align: center;
+}
+
+#header .wrap .service > div {
+  min-width: 100px;
+  max-width: 150px;
+}
+
+#header .wrap .service i {
+  font-size: 20px;
+  color: #fff;
+
+}
+
+#header .wrap .service a {
+  text-decoration: none;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.news {
+  width: 200px;
+  position: absolute;
+  line-height: 15px;
+  margin-top: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.news li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.news li a {
+  text-decoration: none;
+  color: #000 !important;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* ẩn hiện thông tin */
+.service-inf:hover .news {
+  opacity: 1;
+  visibility: visible;
+  margin-top: -15px;
+}
+
+/* ẩn hiện máy tính */
+.pc:hover .news {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0;
+}
+
+/* ẩn hiện khuyến mãi */
+.discount:hover .news {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0;
+}
+
+.news a:hover {
+  opacity: 1;
+}
+
+/* end header */
+/* navbar */
+#navbar {
+  background-color: #252525;
+  height: 36px;
+}
+
+#navbar .menu {
+  width: 1220px;
+  display: flex;
+  padding: 0;
+}
+
+#navbar .menu li {
+  list-style-type: none;
+}
+
+#navbar .menu li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+/* ẩn hiện nav-bar */
+.phone:hover .nav-box {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0;
+}
+
+.laptop:hover .nav-box {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0;
+}
+
+.tablet:hover .nav-box {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0;
+}
+
+.apple:hover .nav-box {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0;
+}
+
+.accessory:hover .nav-box {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0;
+}
+
+/* kết thúc */
+.nav-box {
+  position: absolute;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: 0.4s;
+  margin-top: 30px;
+  opacity: 0;
+  visibility: hidden;
+  width: 1200px;
+}
+
+.nav-box .nav-company {
+  width: 396px;
+  border-right: 1px solid #eee;
+}
+
+.nav-box .nav-company td {
+  width: calc(100%/3);
+}
+
+.nav-box a {
+  color: #000 !important;
+  text-transform: capitalize !important;
+  font-size: 12px;
+  padding-left: 10px;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.nav-box a:hover {
+  opacity: 1;
+}
+
+.nav-box-bold {
+  text-transform: uppercase;
+  color: #3d3d3d;
+  font-weight: bold;
+  font-size: 13px;
+  padding-left: 10px;
+}
+
+.nav-box .level {
+  width: 170px;
+  border-right: 1px solid #eee;
+}
+
+.nav-box .hot-selling {
+  width: 347px;
+}
+
+.nav-box .hot-selling td:first-child {
+  width: 80px;
+}
+
+.nav-box .hot-selling img {
+  width: 80px;
+}
+
+.nav-box .hot-selling a {
+  font-size: 14px;
+  opacity: 1;
+}
+
+.nav-box .hot-selling-price {
+  color: #d0021b;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-box-banner img {
+  padding: 10px 20px 0 22px;
+}
+
+.menu .laptop .me {
+  margin-left: -122px;
+}
+
+.menu .laptop .me .wlp-2 {
+  width: 253px;
+}
+
+.menu .laptop .me .wlp-5 {
+  width: 556px;
+}
+
+.menu .apple .me .wlp-4 {
+  width: 408px;
+}
+
+.menu .accessory .me .wlp-3 {
+  width: 550px;
+}
+
+.menu .tablet .me {
+  margin-left: -215px;
+}
+
+.menu .tablet .htablet {
+  height: 86px;
+}
+
+.menu .apple .me {
+  margin-left: -363px;
+}
+
+.menu .accessory .me {
+  margin-left: -585px;
+}
+
+.pc .news a {
+  line-height: 20px !important;
+  text-transform: capitalize !important;
+}
+
+.discount .news a {
+  line-height: 20px !important;
+  text-transform: capitalize !important;
+}
+
+.accessory .hot-selling a {
+  line-height: 20px !important;
+}
+
+/* end navbar */
+#content {
+
+  background-color: #f8f9fa;
+  ;
+}
+
+#footer {}
