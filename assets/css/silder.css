@@ -1,0 +1,74 @@
+.wapper-silder{
+    width: 100%;
+    position: relative;
+    overflow-x: auto;
+    height: 100%;
+    /* background-color: #d1d1d1; */
+}
+.wapper-silder.product-detail{
+    height: 500px;
+}
+.wapper-silder.page{
+    height: 300px;
+}
+.wapper-silder::-webkit-scrollbar{
+    display: none;
+}
+/* .main-silder{
+    width: 100%;
+    display: flex;
+} */
+.main-silder.page{
+    height: 300px;
+}
+.item-silder{
+    width: 100%;
+    transition: 2s;
+}
+.item-silder.product-detail{
+    height: 500px;
+}
+.item-silder.page{
+    height: 300px;
+}
+.item-silder.page img{
+    height: 300px;
+}
+.item-silder img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.next, .back{
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 50%;
+    line-height: 60px;
+    position: absolute;
+    top: 40%;
+    background-color: rgb(192 192 192/70%)
+
+}
+.next{
+    right: 30px;
+}
+.back{
+    left: 30px;
+}
+
+
+/* .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  } */
+.row.no-warp{
+    flex-wrap: nowrap;
+}
