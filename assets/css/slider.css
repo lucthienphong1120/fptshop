@@ -1,61 +1,62 @@
-.wapper-silder{
+.wapper-slider{
     width: 100%;
     position: relative;
     overflow-x: auto;
     height: 100%;
     /* background-color: #d1d1d1; */
 }
-.wapper-silder.product-detail{
+.wapper-slider.product-detail{
     height: 500px;
 }
-.wapper-silder.page{
+.wapper-slider.page{
     height: 300px;
 }
-.wapper-silder::-webkit-scrollbar{
+.wapper-slider::-webkit-scrollbar{
     display: none;
 }
-/* .main-silder{
+/* .main-slider{
     width: 100%;
     display: flex;
 } */
-.main-silder.page{
+.main-slider.page{
     height: 300px;
 }
-.item-silder{
+.item-slider{
     width: 100%;
     transition: 2s;
+    border: 1px solid #ccc;
 }
-.item-silder.product-detail{
+.item-slider.product-detail{
     height: 500px;
 }
-.item-silder.page{
+.item-slider.page{
     height: 300px;
 }
-.item-silder.page img{
+.item-slider.page img{
     height: 300px;
 }
-.item-silder img{
+.item-slider img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 
 }
 .next, .back{
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     border: none;
     border-radius: 50%;
-    line-height: 60px;
+    line-height: 40px;
     position: absolute;
     top: 40%;
-    background-color: rgb(192 192 192/70%)
-
+    background-color: #ccc;
+    font-size: 16px;
 }
 .next{
-    right: 30px;
+    right: 10px;
 }
 .back{
-    left: 30px;
+    left: 10px;
 }
 
 
