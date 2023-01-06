@@ -165,8 +165,7 @@ ul, li {
 }
 
 .breadcrumbs li:first-child a {
-    color: #0275d8;
-    font-weight: bold;
+    color: #288ad6;
 }
 
 .breadcrumbs li a {
@@ -175,7 +174,6 @@ ul, li {
 
 .breadcrumbs li a:hover {
     color: #000;
-    text-decoration: underline;
 }
 
 /* main */
@@ -655,14 +653,14 @@ ul, li {
 }
 
 .footer-list-item a {
-    color: #3399d2;
+    color: #333;
     font-size: 16px;
     padding: 8px 0;
     display: block;
 }
 
 .footer-list-item a:hover {
-    text-decoration: underline;
+    color: #3399d2;
 }
 
 .title-footer {

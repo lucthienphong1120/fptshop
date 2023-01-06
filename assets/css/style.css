@@ -6,14 +6,16 @@
 
 body {
   font-size: 14px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .clear {
   clear: both;
 }
 
-#main {}
+a {
+  text-decoration: none;
+}
 
 /* header */
 #header {
@@ -61,7 +63,7 @@ body {
   text-align: center;
 }
 
-#header .wrap .service > div {
+#header .wrap .service>div {
   min-width: 100px;
   max-width: 150px;
 }
@@ -314,5 +316,3 @@ body {
   background-color: #f8f9fa;
   ;
 }
-
-#footer {}
