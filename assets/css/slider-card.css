@@ -1,6 +1,6 @@
 .slider {
     position: relative;
-    background-image: url(../images/desk-header-bg.png);
+    background-image: url(../images/header/4.png);
     background-size: contain;
 }
 
@@ -28,7 +28,7 @@
     flex-wrap: nowrap;
     transition: 1s;
 }
-
+/* 
 .next-slider-card,
 .back-slider-card {
     height: 60px;
@@ -47,24 +47,24 @@
 
 .back-slider-card {
     left: 30px;
-}
+} */
 
 /* mobile */
 @media (max-Width: 739px) {
 
-    .next,
-    .back {
+    .next-slider-card,
+    .back-slider-card {
         width: 70px;
         height: 70px;
         font-size: 200%;
         line-height: 50px;
     }
 
-    .next {
+    .next-slider-card {
         right: 0;
     }
 
-    .back {
+    .back-slider-card {
         left: 0;
     }
 

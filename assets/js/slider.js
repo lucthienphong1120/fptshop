@@ -1,58 +1,47 @@
 window.addEventListener("load", function () {
+    // slider card
     const mainslider = document.querySelector('.main-slider')
     const itemslider = document.querySelectorAll('.wrapper-item-slider')
-    console.log(itemslider)
+
     var withItem = itemslider[0].offsetWidth;
 
     var lenghtItem = itemslider.length;
     let tranX = 0;
-    const back = document.querySelector('.back');
-    const next = document.querySelector('.next');
+    const back = document.querySelector('.back-slider-card');
+    const next = document.querySelector('.next-slider-card');
     let index = 1;
     // console.log(lenghtItem);
 
-    changeNext = next.onclick = function () {
+    changeNext = function () {
         if (index >= lenghtItem) {
             index = 1;
-            mainslider.style = `transform: translateX(0px)`
+            mainslider.style = `transform: translateX(0px)`;
             tranX = 0;
             return;
         }
         tranX = tranX - withItem;
-        mainslider.style = `transform: translateX(${tranX}px)`
+        mainslider.style = `transform: translateX(${tranX}px)`;
         index++;
         // console.log(tranX)
     }
-    changeback = back.addEventListener("click", function () {
+    next.onclick = function () {
+        changeNext();
+    }
+    changeback = function () {
         if (index <= 1) {
             index = 1;
             return;
         }
         tranX = tranX + withItem;
-        mainslider.style = `transform: translateX(${tranX}px)`
+        mainslider.style = `transform: translateX(${tranX}px)`;
         index--;
         // console.log(index)
 
-    })
-    setInterval(changeNext, 5000);
-
-    var dot = document.querySelectorAll('.dot')
-    // console.log(dot)
-    // dot.forEach((a ,index) =>{
-    //     a.addEventListener("click", () =>{
-    //        console.log(index)
-    //     })
-
-
-    // })
-
-    // [...dot].forEach((item) =
-    //     dot.addEventListener("click", function (e) {
-    //       const slideIndex = parseInt(e.target.dataset.index);
-    //       index = slideIndex;
-    //       sliderMain.style = `transform:translatex(${-1*index-slideritemwidth}px)`
-    //     })
-    // )
+    }
+    back.onclick = function () {
+        changeback();
+    }
+    setInterval(changeNext, 2000);
 
 });
 

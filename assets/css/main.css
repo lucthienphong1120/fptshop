@@ -50,7 +50,7 @@ ul, li {
 .product-card-item-img {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 250px;
     display: flex;
     justify-content: center;
 }
@@ -58,7 +58,7 @@ ul, li {
 .product-card-item-img img {
     width: 100%;
     object-fit: cover;
-    height: 200px;
+    height: 250px;
 }
 
 .product-card-item-img img:hover {
@@ -81,7 +81,7 @@ ul, li {
     display: block;
     padding: 5px 15px;
     border-radius: 17px;
-    background-color: #cc2827;
+    background-color: #eb0501;
     color: #fff;
     font-weight: 600;
 }
@@ -111,14 +111,14 @@ ul, li {
 }
 
 .sticker-sale {
-    background-color: #4d95fb;
+    background-color: #4285f4;
     color: #fff;
     padding: 5px 20px;
     border-radius: 17px;
 }
 
 .sticker-event {
-    background-color: #ea9d1d;
+    background-color: #66cd42;
     color: #fff;
     padding: 5px 20px;
     border-radius: 17px;
@@ -210,7 +210,7 @@ ul, li {
     width: 150px;
     height: 40px;
     background-position: -2px -7px;
-    background-image: url(../images/fptshop.png);
+    background-image: url(../images/header/3.png);
     background-repeat: no-repeat;
 }
 
@@ -728,7 +728,7 @@ ul, li {
 
 .product-list-tab {
     margin: 10px 10px;
-    border: 1px solid #928b8b;
+    border: 1px solid #999;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -737,11 +737,11 @@ ul, li {
     cursor: pointer;
     display: inline-block;
     padding: 5px 12px;
-    color: #928b8b;
+    color: #999;
 }
 
 .product-list-tab-item.active {
-    background-color: #cc2827;
+    background-color: #eb0501;
     color: #fff;
 }
 
@@ -763,11 +763,11 @@ ul, li {
 }
 
 .pagination-item.active {
-    border: 1px solid #cc2827;
+    border: 1px solid #eb0501;
 }
 
 .pagination-item.active a {
-    color: #cc2827;
+    color: #eb0501;
 }
 
 .pagination-item.none-item {
@@ -782,7 +782,7 @@ ul, li {
 }
 
 .pagination-item a:hover {
-    color: #cc2827;
+    color: #eb0501;
 }
 
 .product-cate-card {
@@ -816,7 +816,7 @@ ul, li {
 }
 
 .rating-category i.active {
-    color: #ea9d1d;
+    color: #66cd42;
 }
 
 .content-product-detail {
@@ -826,7 +826,7 @@ ul, li {
 
 .content-product-detail-right .price h2 {
     font-size: 200%;
-    color: #cc2827;
+    color: #eb0501;
 }
 
 .content-product-detail-right .price h2 span {
@@ -920,7 +920,7 @@ li.sale-gift-item {
     width: 100%;
     padding: 15px 5px;
     border-radius: 3px;
-    background-color: #cc2827;
+    background-color: #eb0501;
     color: #fff;
     font-size: 110%;
 }

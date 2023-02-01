@@ -28,7 +28,7 @@ tabsall.forEach((tab, index) =>{
 		tabsall.forEach((tab)=>{
 			tab.classList.remove('active')	
 		}) 
-		console.log(index);
+		// console.log(index);
 
 		tabsall[index].classList.add('active')
 		tabsContentall[index].classList.add('active')	

@@ -112,7 +112,7 @@
         height: 70px;
     }
     /* slider */
-    .next, .back{
+    .next-slider-card, .back-slider-card{
         height: 40px;
         width: 40px;
         line-height: 40px;
@@ -149,7 +149,7 @@
     .grid.slider{
         min-height: 250px;
     }
-    .next.page, .back.page {
+    .next-slider-card.page, .back-slider-card.page {
     height: 40px;
     width: 40px;
     line-height: 40px;
@@ -198,7 +198,7 @@
     .grid.slider{
         min-height: 200px;
     }
-    .next, .back {
+    .next-slider-card, .back-slider-card {
     height: 40px;
     width: 40px;
     line-height: 40px;

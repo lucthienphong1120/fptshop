@@ -1,56 +1,33 @@
-window.addEventListener("load", function(){
-
-
-
-    const sliderMain = document.querySelector('.slider-main');
-    const cardslider = document.querySelectorAll('.card-slider');
-    const widthCardSlider = cardslider[0].offsetWidth;
+window.addEventListener("load", function () {
+    // slider card
+    const sliderMain = document.querySelector('.main-slider');
+    const cardslider = document.querySelectorAll('.wrapper-item-slider');
+    const widthCardSlider = cardslider[0];
     const lenghtCardSlider = cardslider.length;
-    console.log(cardslider);
-    // let sumCard = (widthCardSlider*lenghtCardSlider)/2;
-    // console.log(sumCard)
-    let tranX = 0; 
+    // console.log(cardslider);
+    let tranX = 0;
     const backslider = document.querySelector('.back-slider-card');
     const nextslider = document.querySelector('.next-slider-card');
     let index = 0;
-    changenextslider = nextslider.onclick = function(){
-        
-        if(index >= lenghtCardSlider-4) {
-            
+
+    changenextslider = function () {
+        if (index > lenghtCardSlider - 1) {
             index = 0;
             sliderMain.style = `transform: translateX(0px)`;
             tranX = 0;
             return;
         }
-        // }if else(index < 1){return;}
         tranX = tranX - widthCardSlider;
         sliderMain.style = `transform: translateX(${tranX}px)`;
         // console.log(index);
         index++;
-        console.log(index)
     }
-    let mob_view = window.matchMedia("(max-width: 739px)");
-    	if (mob_view.matches)
-    	 {
-            changenextslider = nextslider.onclick = function(){
-        
-                if(index >= lenghtCardSlider-2) {
-                    
-                    index = 0;
-                    sliderMain.style = `transform: translateX(0px)`;
-                    tranX = 0;
-                    return;
-                }
-                // }if else(index < 1){return;}
-                tranX = tranX - widthCardSlider;
-                sliderMain.style = `transform: translateX(${tranX}px)`;
-                // console.log(index);
-                index++;
-            }
-    	 }
-    changebackslider = backslider.onclick = function(){
-    
-        if(index <1) {
+    nextslider.onclick = function () {
+        changenextslider();
+    }
+    changebackslider = function () {
+
+        if (index < 1) {
             index = 0;
             return;
         }
@@ -59,13 +36,14 @@ window.addEventListener("load", function(){
         // console.log(index);
         index--;
     }
-    
-                
-        // setInterval(function(){
-        setInterval(changenextslider,5000);
-        // }, 1000);
-    
-    
+    backslider.onclick = function () {
+        changebackslider();
+    }
+
+    // setInterval(function(){
+    setInterval(changenextslider, 5000);
+    // }, 1000);
+
     // 
-    
-    });
+
+});

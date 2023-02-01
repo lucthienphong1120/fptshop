@@ -46,8 +46,8 @@
 
 }
 
-.next,
-.back {
+.next-slider-card,
+.back-slider-card {
     height: 40px;
     width: 40px;
     border: none;
@@ -59,11 +59,11 @@
     font-size: 16px;
 }
 
-.next {
+.next-slider-card {
     right: 10px;
 }
 
-.back {
+.back-slider-card {
     left: 10px;
 }
 
